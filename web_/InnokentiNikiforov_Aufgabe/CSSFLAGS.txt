@@ -1,0 +1,6 @@
+https://cohost.org/lexyeevee/post/2220859-css-pride-flags
+
+<a target="_blank" href="https://icons8.com/icon/wrwXlOVAFfeY/instagram">Instagram</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+background-color: #ff8000;
+		opacity: 1.0;
+https://www.magicpattern.design/tools/css-backgrounds

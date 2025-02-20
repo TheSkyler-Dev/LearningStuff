@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Booking a room</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bookingform.css">
+        <script src="initRooms.js" defer></script>
+    </head>
+    <!--body-->
+    <body>
+        <header>
+            <h1><strong>New Lockerbie Conference Center</strong></h1>
+            <p><i><strong>Your venue for Conferences and Lectures</strong></i></p>
+        </header>
+        <!--Content_roommap-->
+        <section>
+            <h2><strong>Book a conference room</strong></h2>
+        </section>
+        <!--Content_bookingform-->
+        <div>
+            <form id="bookingform">
+                <label for="cname"><strong></strong></label><br>
+                <input required type="text" id="cname" name="cname" placeholder="Company name"><br>
+                <label for="email"><strong></strong></label><br>
+                <input required type="text" id="email" name="email" placeholder="Your email"><br>
+                <br>
+                <label for="sdate"><strong>Start time</strong></label><br>
+                <input type="datetime-local" id="sdate" name="sdate"><br>
+                <br>
+                <label for="edate"><strong>End time</strong></label><br>
+                <input type="datetime-local" id="edate" name="edate"><br>
+                <label for="participants"><strong></strong></label><br>
+                <input required type="number" id="participants" name="participants" placeholder="Participants"><br>
+                <label for="custreq"></label><br>
+                <!--Dropdown choice of features-->
+                <select name="Room features" id="custreq">
+                    <option value="Choose an option">--Choose an option--</option>
+                    <option value="Smart board">Smart board</option>
+                    <option value="HDMI">HDMI connection</option>
+                    <option value="DisplayPort">DisplayPort connection</option>
+                    <option value="USB-C">USB-C connection</option>
+                    <option value="Video conferencing">Video conferencing</option>
+                    <option value="Projector">Projector</option>
+                    <option value="Canvas">Canvas</option>
+                    <option value="Whiteboard">Whiteboard</option>
+                    <option value="Display connections">Display connections</option>
+                    <option value="Stage">Stage</option>
+                    <option value="Video wall">Video wall</option>
+                    <option value="Sound system">Sound system</option>
+                    <option value="Conference microphones">Conference microphones</option>
+                    <option value="Laptop docking station"> Docking station</option>
+                    <option value="Microphone">Microphone</option>
+                </select><br>
+                <label></label><br>
+                <button type="submit" class="Get Quote" value="Get Quote">Get your Quote</button><br>
+            </form>  
+
+            <div id="quote-container"></div>
+            <script src="form.js"></script>
+        </div>
+    </body>
+</html>

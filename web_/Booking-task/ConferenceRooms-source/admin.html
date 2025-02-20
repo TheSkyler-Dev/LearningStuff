@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Room Management Interface</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="admin.css">
+        <script src="initRooms.js" defer></script>
+    </head>
+    <!--body-->
+    <body>
+        <header>
+            <h1><strong>New Lockerbie Conference Center</strong></h1>
+            <p><i><strong>Your venue for Conferences and Lectures</strong></i></p>
+        </header>
+        <!--Content_roommap-->
+        <section>
+            <h2><strong>Room Management</strong></h2>
+            <p>Welcome to the Admin's room management interface</p>
+        </section>
+        <!--Content_bookingform-->
+        <div>
+            <form id="roomAdd">
+                <label for="roomID"><strong></strong></label><br>
+                <input required type="number" id="roomID" name="roomID" placeholder="Room Identifier" required><br>
+                <label for="name"><strong></strong></label><br>
+                <input required type="text" id="name" name="roomName" placeholder="Room name" required><br>
+                <label for="capacity"></label><br>
+                <input required type="number" id="capacity" name="roomCapacity" placeholder="Room capacity"required><br>
+                <label for="features"></label><br>
+                <input type="text" id="features" name="features" placeholder="Room features" required><br>
+                <label for = "price"></label><br>
+                <input required type="number" id="price" name="hourlyRate" placeholder="Hourly Rate"><br> 
+                <label></label><br>
+                <button type="submit" class="makeChanges" value="Commit changes">Commit changes</button><br>
+            </form>  
+
+            <div id="change-alert"></div>
+            <script src="admin.js"></script>
+        </div>
+        <div>
+            <!--<script src="roomEdit.js"></script>-->
+            <form id="roomEdit">
+                <label for="roomSelect">Block/Unblock rooms</label>
+                <select id="roomSelect">
+
+                </select>
+                <button type="button" id="blockButton">Block room</button>
+                <button type="button" id="unblockButton">Unblock room</button>
+            </form>
+            <script src="roomEdit.js"></script>
+        </div>
+    </body>
+</html>
