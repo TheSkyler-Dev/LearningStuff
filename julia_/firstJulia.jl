@@ -68,13 +68,13 @@ for number in numberlist
     end
 end
 
-x = 1
-while x <= length(numberlist)
-    println(numberlist[x])
-    piMod = pi % numberlist[x]
-    println(piMod)
-    x += 1
-end
+#x = 1
+#while x <= length(numberlist)
+#    println(numberlist[x])
+#   piMod = pi % numberlist[x]
+#    println(piMod)
+#    x += 1
+#end
 
 m = 5
 n = 5
