@@ -1,0 +1,29 @@
+#Fortran
+*.f linguist-language=Fortran
+*.f90 linguist-language=Fortran
+*.f95 linguist-language=Fortran
+*.f03 linguist-language=Fortran
+*.f08 linguist-language=Fortran
+*.for linguist-language=Fortran
+*.ftn linguist-language=Fortran
+*.fpp linguist-language=Fortran
+
+#Julia
+*.jl linguist-language=Julia
+
+#Python
+*.py linguist-language=Python
+
+#Dart
+*.dart linguist-language=Dart
+
+#HTML
+*.html linguist-language=HTML
+*.htm linguist-language=HTML
+
+#CSS
+*.css linguist-language=CSS
+
+#JavaScript
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
