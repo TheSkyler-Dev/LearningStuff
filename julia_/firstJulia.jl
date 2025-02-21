@@ -95,3 +95,5 @@ p2 = plot(x, x.^2)
 p3 = plot(x, x.^3)
 p4 = plot(x, x.^4)
 plot(p1, p2, p3, p4, layout = (2, 2), legend = false)
+
+plot(x -> x^2 - 4x +3, -2, 6, label="y = x^2 - 4x + 3")
