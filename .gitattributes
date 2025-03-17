@@ -32,3 +32,19 @@
 *.ps1 linguist-language=PowerShell
 *.psm1 linguist-language=PowerShell
 *.psd1 linguist-language=PowerShell
+
+#Kotlin
+*.kt linguist-language=Kotlin
+*.ktx linguist-language=Kotlin
+
+#Assembly
+*.asm linguist-language=Assembly
+
+#Rust
+*.rs linguist-language=Rust
+
+#Swift
+*.swift linguist-language=Swift
+
+#Java
+*.java linguist-language=Java
