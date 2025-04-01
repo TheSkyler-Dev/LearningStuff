@@ -17,3 +17,5 @@ This repository includes practice code in the following languages:
   - `CSS`
   - `JavaScript`
 - `Assembly (x86_64)` (May add ARM and AVR Assembly later)
+- `Haskell`
+- some `C++` classes and functions for later use
