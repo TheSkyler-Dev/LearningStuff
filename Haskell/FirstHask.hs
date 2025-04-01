@@ -1,7 +1,12 @@
 import Text.Read (Lexeme(String))
 import Prelude
 import qualified Distribution.SPDX as SPDX
+import GHC.Exts.Heap (GenClosure(FloatClosure))
 main :: IO()
+
+popDensity :: (Float, Float) -> Float
+popDensity (population, area) = density where density = population / area
+
 main = do
     putStrLn "Hello, Haskell!"
     putStrLn "This is my first Haskell program."
@@ -20,3 +25,5 @@ main = do
     putStrLn $ "100 degrees Celsius is " ++ show (ctk 100) ++ " degrees Kelvin."
     putStrLn $ "100 degrees Fahrenheit is " ++ show (ftc 100) ++ " degrees Celsius."
     putStrLn $ "100 degrees Fahrenheit is " ++ show (ctk (ftc 100)) ++ " degrees Kelvin."
+    
+    print(popDensity (1000000.16, 1000.1))
