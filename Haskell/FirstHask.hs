@@ -1,3 +1,4 @@
+import Text.Read (Lexeme(String))
 main :: IO()
 main = do
     putStrLn "Hello, Haskell!"
@@ -6,5 +7,6 @@ main = do
     putStrLn "Haskell is a purely functional programming language."
     putStrLn "I am excited to learn more about it!"
     putStrLn "Still getting to grips. Might take a while."
-    let someText = "21" ++ ": Hallo niece and nephew!"
+    let someText :: String
+        someText = "21" ++ ": Hallo niece and nephew, it's uncle Roger!"
     putStrLn someText
