@@ -1,6 +1,3 @@
-import Prelude
-import System.IO
-
 pi = 3.14159265358979323846 --predefine pi globally
 barrelVolume :: Double -> Double -> Double
 barrelVolume r h = Main.pi * r**2 * h
