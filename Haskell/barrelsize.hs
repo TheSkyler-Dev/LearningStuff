@@ -21,6 +21,9 @@ main = do
     let h = read barrelHeight :: Double
     let volume = barrelVolume r h
     let surface = barrelSurface r h
+
+    putStrLn $ "Base radius of the barrel: " ++ show r
+    putStrLn $ "Height of the barrel: " ++ show h
     putStrLn $ "Volume of the barrel: " ++ show volume
     putStrLn $ "Surface area of the barrel: " ++ show surface
     putStrLn "Done!"

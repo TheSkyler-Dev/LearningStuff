@@ -15,8 +15,8 @@ program barrel
     print *, 'Enter barrel height:'
     read (*,*) height
 
-    area = pi * radius**2
-    volume = area * height
+    area = 2 * pi * radius * (radius + height)
+    volume = pi * radius**2 * height
 
     print *, 'Barrel radius is: ', radius
     print *, 'Barrel height is: ', height
