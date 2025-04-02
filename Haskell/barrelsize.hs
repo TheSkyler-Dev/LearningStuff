@@ -1,0 +1,26 @@
+import Prelude
+import System.IO
+
+-- This program calculates the volume and surface area of a barrel given its base radius and height.
+barrelVolume :: Double -> Double -> Double
+barrelVolume r h = pi * r**2 * h
+    where pi = 3.14159265358979323846
+
+barrelSurface :: Double -> Double -> Double
+barrelSurface r h = 2 * pi * r * (r + h)
+    where pi = 3.14159265358979323846
+
+-- main function: Takes user input and calculates volume and surface area of given barrel
+main :: IO()
+main = do
+    putStrLn "Enter base radius of the barrel: "
+    barrelRadius <- getLine
+    putStrLn "Enter height of the barrel: "
+    barrelHeight <- getLine
+    let r = read barrelRadius :: Double
+    let h = read barrelHeight :: Double
+    let volume = barrelVolume r h
+    let surface = barrelSurface r h
+    putStrLn $ "Volume of the barrel: " ++ show volume
+    putStrLn $ "Surface area of the barrel: " ++ show surface
+    putStrLn "Done!"
