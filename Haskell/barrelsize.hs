@@ -21,12 +21,13 @@ main = do
     let h = read barrelHeight :: Double
     let volume = barrelVolume r h
     let liters = ccmInLiter volume
+    let floz = ccmInFlOz volume
     let surface = barrelSurface r h
 
     putStrLn $ "Base radius of the barrel: " ++ show r
     putStrLn $ "Height of the barrel: " ++ show h
     putStrLn $ "Volume of the barrel: " ++ show volume ++ " ccm"
     putStrLn $ "That's " ++ show liters ++ " liters" 
-    putStrLn $ "That's " ++ show (ccmInFlOz volume) ++ " fl. oz."
+    putStrLn $ "That's " ++ show floz ++ " fl. oz."
     putStrLn $ "Surface area of the barrel: " ++ show surface
     putStrLn "Done!"
