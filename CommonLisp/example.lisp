@@ -9,7 +9,7 @@
         (format t "~A~%" name)
         name))
 
-(print (ask-and-return))
+(princ (ask-and-return))
 
 (defun ask-age ()
     (format t "What is your age? ")
@@ -21,4 +21,4 @@
         (format t "~A~%" age)
         age))
 
-(print (return-age))
+(princ (return-age))
