@@ -8,9 +8,10 @@
 ;; Function with an if-statement
 (defun print-sign (n)
     (format t "~A~%"
-        (if (< n 0) 
-            "Negative" 
-            "Positive"))
+        (cond 
+            ((< n 0) "Negative")
+            ((= n 0) "Zero")
+            (t       "Positive")))
 )
 
 (print-sign 512)
