@@ -10,3 +10,15 @@
         name))
 
 (print (ask-and-return))
+
+(defun ask-age ()
+    (format t "What is your age? ")
+    (finish-output)
+    (read-line))
+
+(defun return-age ()
+    (let ((age (ask-age)))
+        (format t "~A~%" age)
+        age))
+
+(print (return-age))
