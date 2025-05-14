@@ -9,7 +9,7 @@
         (format t "~A~%" name)
         name))
 
-(princ (ask-and-return))
+(ask-and-return)
 
 (defun ask-age ()
     (format t "What is your age? ")
@@ -21,4 +21,16 @@
         (format t "~A~%" age)
         age))
 
-(princ (return-age))
+(return-age)
+
+(defun read-number ()
+    (format t "Enter a number: ")
+    (finish-output)
+    (parse-integer (read-line)))
+
+(defun read-and-sum (n)
+    (let ((sum 0))
+        (dotimes (i n sum)
+            (setf sum (+ sum (read-number))))))
+
+(princ (read-and-sum 5))
