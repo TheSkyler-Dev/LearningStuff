@@ -14,7 +14,7 @@
 (defun ask-age ()
     (format t "What is your age? ")
     (finish-output)
-    (read-line))
+    (read-number))
 
 (defun return-age ()
     (let ((age (ask-age)))

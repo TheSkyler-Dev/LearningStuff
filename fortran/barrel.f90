@@ -6,6 +6,9 @@ program barrel
     real :: height
     real :: area
     real :: volume
+    real :: liters
+    real :: floz
+    real :: gallons
 
     pi = 3.1415927
 
