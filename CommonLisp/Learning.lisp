@@ -18,20 +18,20 @@
 
 ;; Function to return the sum of all elements in a list
 (defun sum-list (l)
-    let ((total 0))
+    (let ((total 0))
         (dolist (v l total)
-            (setf total (+ total v))))
+            (setf total (+ total v)))))
 
-(sum-list '(1 2 3 4 5 6 7 8 9 10))
+(princ (sum-list '(1 2 3 4 5 6 7 8 9 10)))
 
 (defun exprl (x) (list '+ (list '* 2 x) 1))
 
-(exprl 3)
+(princ (exprl 3))
 
 (defun epirb (x) `(+ (* 3 ,x) 1))
 
-(epirb 4)
+(princ (epirb 4))
 
-defun expra (&rest xs) `(+ (* 2 ,@xs) 1)
+(defun expra (&rest xs) `(+ (* 2 ,@xs) 1))
 
-(expra 3 4 6 5 7)
+(princ (expra 3 4 6 5 7))
