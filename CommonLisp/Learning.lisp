@@ -23,15 +23,19 @@
             (setf total (+ total v)))))
 
 (princ (sum-list '(1 2 3 4 5 6 7 8 9 10)))
+(terpri)
 
 (defun exprl (x) (list '+ (list '* 2 x) 1))
 
 (princ (exprl 3))
+(terpri)
 
 (defun epirb (x) `(+ (* 3 ,x) 1))
 
 (princ (epirb 4))
+(terpri)
 
 (defun expra (&rest xs) `(+ (* 2 ,@xs) 1))
 
 (princ (expra 3 4 6 5 7))
+(terpri)
