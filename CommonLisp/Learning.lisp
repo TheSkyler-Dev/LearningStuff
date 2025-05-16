@@ -58,7 +58,7 @@
   `(let (,binding)
     (if ,(first binding) ,true-expr ,false-expr)))
 
-(macroexpand-1 '(if-let (x 42) 'true 'false))
+(princ (macroexpand-1 '(if-let (x 42) 'true 'false)))
 
 ;;(defmacro if-swapped (con false-expr true-expr)
 ;;  `(if ,(con) ,false-expr ,true-expr))
