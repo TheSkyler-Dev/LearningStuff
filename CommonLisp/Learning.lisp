@@ -39,3 +39,28 @@
 
 (princ (expra 3 4 6 5 7))
 (terpri)
+
+(defun plusf (a b) `(+ ,a ,b))
+(princ (plusf 4 8))
+(terpri)
+
+(defmacro plusm (c d) `(+ ,c ,d))
+(princ (plusm 4 8))
+(terpri)
+
+(if t (progn (princ "Hello ") (princ "World")))
+(terpri)
+
+(when t (princ "Hello ") (princ "World")) ;;better option
+(terpri)
+
+(defmacro if-let (binding true-expr false-expr)
+  `(let (,binding)
+    (if ,(first binding) ,true-expr ,false-expr)))
+
+(macroexpand-1 '(if-let (x 42) 'true 'false))
+
+;;(defmacro if-swapped (con false-expr true-expr)
+;;  `(if ,(con) ,false-expr ,true-expr))
+
+;;(macroexpand-1 '(if-swapped (14) 'false 'true))
