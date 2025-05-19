@@ -59,8 +59,18 @@
     (if ,(first binding) ,true-expr ,false-expr)))
 
 (princ (macroexpand-1 '(if-let (x 42) 'true 'false)))
+(terpri)
 
 ;;(defmacro if-swapped (con false-expr true-expr)
 ;;  `(if ,(con) ,false-expr ,true-expr))
 
 ;;(macroexpand-1 '(if-swapped (14) 'false 'true))
+
+(defmacro my-and (&rest exprs)
+  (if (= (length exprs) 1)
+    (first exprs)
+      `(if ,(first exprs)
+           ,(first exprs)
+           (my-and ,@(rest exprs)))))
+
+(princ (my-and nil 2))
