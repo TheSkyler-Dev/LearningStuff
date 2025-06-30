@@ -18,4 +18,5 @@ This repository includes practice code in the following languages:
   - `JavaScript`
 - `Assembly (x86_64)` (May add ARM and AVR Assembly later)
 - `Haskell`
+- `Mouse`
 - some `C++` classes and functions for later use
