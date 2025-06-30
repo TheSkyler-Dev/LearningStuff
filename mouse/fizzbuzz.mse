@@ -1,0 +1,22 @@
+~ FizzBuzz in Mouse programming language
+1 N:                    ~ Initialize counter N to 1
+
+( N. 100 > ^            ~ Loop while N <= 100
+  N. 15 \ 0 = [         ~ If N mod 15 == 0
+    "FizzBuzz" $        ~ Print "FizzBuzz"
+  |                     ~ Else
+    N. 3 \ 0 = [        ~ If N mod 3 == 0
+      "Fizz" $          ~ Print "Fizz"
+    |                   ~ Else
+      N. 5 \ 0 = [      ~ If N mod 5 == 0
+        "Buzz" $        ~ Print "Buzz"
+      |                 ~ Else
+        N. !            ~ Print the number N
+      ]
+    ]
+  ]
+  !                     ~ Print newline
+  N. 1 + N:             ~ Increment N by 1
+)
+
+~ End of program
